@@ -32,8 +32,8 @@ export default (app: fastify.FastifyInstance, options, done) => {
                 method: 'POST',
                 data: request.body
             })
-        } catch (ex) {
-            return response.code(400).send(ex)
+        } catch (err) {
+            return response.code(400).send(err)
         }
         response.send(user);
     });

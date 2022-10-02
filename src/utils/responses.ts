@@ -1,4 +1,7 @@
 class Responses {
+    static reponseData(arg0: string, arg1: string, arg2: undefined[]): any {
+        throw new Error('Method not implemented.');
+    }
     static errorResponseObj(){
         return {
             type: 'object',
