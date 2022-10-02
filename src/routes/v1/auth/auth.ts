@@ -1,8 +1,8 @@
 import * as fastify from 'fastify';
-import Responses from '../../utils/responses';
-import {RouteSchema} from '../../@types/routeschema';
-import Requests from '../../utils/requests';
-import requestmaker from '../../utils/requestMaker';
+import Responses from '../../../utils/responses';
+import {RouteSchema} from '../../../@types/routeschema';
+import Requests from '../../../utils/requests';
+import requestmaker from '../../../utils/requestmaker';
 
 export default (app: fastify.FastifyInstance, options, done) => {
 
