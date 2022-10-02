@@ -1,0 +1,14 @@
+version: '3.7'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile-build
+    image: gateway
+    container_name: gateway
+    restart: unless-stopped
+    networks:
+      - app-network
+networks:
+  app-network:
